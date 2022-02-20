@@ -145,11 +145,9 @@ namespace curse_2
                     }
                 if (infix[i] == '(')
                 {
-
+                    stack.Push(infix[i]);
                 }
-                /////////frfrrrrrrrrrrrrrrr
-                ///g
-                ///tgtg
+              
             }
             return postfix;
         }
