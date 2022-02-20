@@ -157,7 +157,6 @@ namespace curse_2
         {
             double result;
 
-            hello world salsam dasdasl dasldlsadlas dlasldsaldas ldasldlsa
             return result;
         }
     }
