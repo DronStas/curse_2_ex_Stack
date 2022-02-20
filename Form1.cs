@@ -148,7 +148,7 @@ namespace curse_2
         private double calculator()
         {
             double result;
-
+            // даник
             return result;
         }
     }
