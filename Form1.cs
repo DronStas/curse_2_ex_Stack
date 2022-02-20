@@ -148,6 +148,8 @@ namespace curse_2
 
                 }
                 /////////frfrrrrrrrrrrrrrrr
+                ///g
+                ///tgtg
             }
             return postfix;
         }
