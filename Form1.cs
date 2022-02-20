@@ -24,12 +24,12 @@ namespace curse_2
 
         private void left_button_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "(";
+            tbBox.Text += "(";
         }
 
         private void right_button_Click(object sender, EventArgs e)
         {
-            textBox1.Text += ")";
+            tbBox.Text += ")";
         }
 
         private void AC_button_Click(object sender, EventArgs e)
@@ -44,83 +44,83 @@ namespace curse_2
 
         private void button_7_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "7";
+            tbBox.Text += "7";
         }
 
         private void button_8_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "8";
+            tbBox.Text += "8";
         }
 
         private void button_9_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "9";
+            tbBox.Text += "9";
         }
 
         private void button_del_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "/";
+            tbBox.Text += "/";
         }
 
         private void button_4_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "4";
+            tbBox.Text += "4";
         }
 
         private void button_5_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "5";
+            tbBox.Text += "5";
         }
 
         private void button_6_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "6";
+            tbBox.Text += "6";
         }
 
         private void button_mult_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "*";
+            tbBox.Text += "*";
         }
 
         private void button_1_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "1";
+            tbBox.Text += "1";
 
         }
 
         private void button_2_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "2";
+            tbBox.Text += "2";
 
         }
 
         private void button_3_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "3";
+            tbBox.Text += "3";
 
         }
 
         private void button_min_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "-";
+            tbBox.Text += "-";
 
         }
 
         private void button_0_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "0";
+            tbBox.Text += "0";
 
         }
 
         private void button_point_Click(object sender, EventArgs e)
         {
-            textBox1.Text += ",";
+            tbBox.Text += ",";
 
         }
 
         private void button_calculator_Click(object sender, EventArgs e)
         {
-            textBox1.Text += "=";
+            tbBox.Text += "=";
 
         }
 
