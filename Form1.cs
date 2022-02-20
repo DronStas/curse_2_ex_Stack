@@ -47,6 +47,7 @@ namespace curse_2
             }
         }
 
+        
         private void button_7_Click(object sender, EventArgs e)
         {
             tbBox.Text += "7";
@@ -133,6 +134,7 @@ namespace curse_2
         {
             tbBox.Text += "+";
         }
+    
         private string infixToPostfix(string infix)
         {
             string postfix = "";
@@ -156,10 +158,68 @@ namespace curse_2
             }
             return postfix;
         }
-        private double calculator()
+
+        private double calculator(string post)
         {
             double result;
+            string[] mas = post.Split(' ');
+            string temp_string;
+            for (int i = 0; i < mas.Length; i++)
+                switch (mas[i])
+                {
+                    case "+":
+                        temp_string = (double.Parse(mas[i - 2]) + double.Parse(mas[i - 1])).ToString();
+                        tbBox.AppendText(mas[i - 2] + "+" + mas[i - 1] + "=" + temp_string + "\n");
+                        mas[i - 2] = temp_string;
+                        for (int j = i - 1; j < mas.Length - 2; j++)
+                            mas[j] = mas[j + 2];
+                        Array.Resize(ref mas, mas.Length - 2);
+                        i -= 2;
+                        break;
+                    case "-":
+                        temp_string = (double.Parse(mas[i - 2]) - double.Parse(mas[i - 1])).ToString();
+                        tbBox.AppendText(mas[i - 2] + "-" + mas[i - 1] + "=" + temp_string + "\n");
+                        mas[i - 2] = temp_string;
+                        for (int j = i - 1; j < mas.Length - 2; j++)
+                            mas[j] = mas[j + 2];
+                        Array.Resize(ref mas, mas.Length - 2);
+                        i -= 2;
+                        break;
+                    case "*":
+                        temp_string = (double.Parse(mas[i - 2]) * double.Parse(mas[i - 1])).ToString();
+                        tbBox.AppendText(mas[i - 2] + "*" + mas[i - 1] + "=" + temp_string + "\n");
+                        mas[i - 2] = temp_string;
+                        for (int j = i - 1; j < mas.Length - 2; j++)
+                            mas[j] = mas[j + 2];
+                        Array.Resize(ref mas, mas.Length - 2);
+
+                        i -= 2;
+                        break;
+                    case "/":
+                        temp_string = (double.Parse(mas[i - 2]) / double.Parse(mas[i - 1])).ToString();
+                        tbBox.AppendText(mas[i - 2] + "/" + mas[i - 1] + "=" + temp_string + "\n");
+                        mas[i - 2] = temp_string;
+                        for (int j = i - 1; j < mas.Length - 2; j++)
+                            mas[j] = mas[j + 2];
+                        Array.Resize(ref mas, mas.Length - 2);
+                        i -= 2;
+                        break;
+                         
+                }
+            return double.Parse(mas[0]);
+
+
+
+            var stack = new Stack<string>();
+            string[] operants = { "0123456789" };
+
+            for (int i = 0; i<mas.Length; i++)
+            {
+                if ()
+            }
             return result;
         }
+
+  
     }
 }
