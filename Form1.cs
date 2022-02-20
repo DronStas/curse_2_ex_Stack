@@ -34,12 +34,17 @@ namespace curse_2
 
         private void AC_button_Click(object sender, EventArgs e)
         {
-
+            tbBox.Clear();
         }
-
         private void CE_button_Click(object sender, EventArgs e)
         {
-
+            int lenght = tbBox.Text.Length - 1;
+            string text = tbBox.Text;
+            tbBox.Clear();
+            for (int i = 0; i < lenght; i++)
+            {
+                tbBox.Text = tbBox.Text + text[i];
+            }
         }
 
         private void button_7_Click(object sender, EventArgs e)
@@ -126,7 +131,7 @@ namespace curse_2
 
         private void button_plus_Click(object sender, EventArgs e)
         {
-
+            tbBox.Text += "+";
         }
         private string infixToPostfix(string infix)
         {
@@ -147,15 +152,13 @@ namespace curse_2
                 {
 
                 }
-                /////////frfrrrrrrrrrrrrrrr
+               
             }
             return postfix;
         }
         private double calculator()
         {
             double result;
-
-            hello world salsam dasdasl dasldlsadlas dlasldsaldas ldasldlsa
             return result;
         }
     }
