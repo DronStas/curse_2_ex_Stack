@@ -29,7 +29,7 @@ namespace curse_2
         /// </summary>
         private void InitializeComponent()
         {
-            this.enter_textBox = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.CE_button = new System.Windows.Forms.Button();
@@ -62,12 +62,12 @@ namespace curse_2
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // enter_textBox
+            // textBox1
             // 
-            this.enter_textBox.Location = new System.Drawing.Point(273, 114);
-            this.enter_textBox.Name = "enter_textBox";
-            this.enter_textBox.Size = new System.Drawing.Size(452, 22);
-            this.enter_textBox.TabIndex = 3;
+            this.textBox1.Location = new System.Drawing.Point(273, 114);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(452, 22);
+            this.textBox1.TabIndex = 3;
             // 
             // panel1
             // 
@@ -377,7 +377,7 @@ namespace curse_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 600);
-            this.Controls.Add(this.enter_textBox);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -394,7 +394,7 @@ namespace curse_2
 
         #endregion
 
-        private System.Windows.Forms.TextBox enter_textBox;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button CE_button;
