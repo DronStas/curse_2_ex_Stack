@@ -47,6 +47,7 @@ namespace curse_2
             }
         }
 
+
         private void button_7_Click(object sender, EventArgs e)
         {
             tbBox.Text += "7";
@@ -133,6 +134,7 @@ namespace curse_2
         {
             tbBox.Text += "+";
         }
+
         private string infixToPostfix(string infix)
         {
             var stack = new Stack<string>();
@@ -207,11 +209,38 @@ namespace curse_2
             }
             return postfix;
         }
-        private double calculator()
-        {
-            double result=0;
-            return result;
-        }
 
+        private double calculator(string rpnString)
+        {
+            Stack<int> numbersStack = new Stack<int>();
+
+            int op1, op2;
+
+            for (int i = 0; i < rpnString.Length; i++)
+            {
+                
+                if (Char.IsDigit(rpnString[i]) && rpnString != " ")
+                    numbersStack.Push(int.Parse(rpnString[i].ToString()));
+             
+                else
+                {
+                    op2 = numbersStack.Pop();
+                    op1 = numbersStack.Pop();
+                    numbersStack.Push(ApplyOperation(rpnString[i], op1, op2));
+                }
+            }          
+            return numbersStack.Pop();
+        }
+        private static int ApplyOperation(char operation, int op1, int op2)
+        {
+            switch (operation)
+            {
+                case '+': return (op1 + op2);
+                case '-': return (op1 - op2);
+                case '*': return (op1 * op2);
+                case '/': return (op1 / op2);
+                default: return 0;
+            }
+        }
     }
 }
