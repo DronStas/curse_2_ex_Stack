@@ -127,7 +127,7 @@ namespace curse_2
         private void button_calculator_Click(object sender, EventArgs e)
         {
             tbBox.Text += "=";
-            infixToPostfix(tbBox.Text);
+            tbBox.Text= Convert.ToString(calculator(infixToPostfix(tbBox.Text)));
         }
 
         private void button_plus_Click(object sender, EventArgs e)
@@ -142,14 +142,14 @@ namespace curse_2
             stackPrior.Push(0);
 
             string postfix = "";
-            const string OPERANRS = "0123456789";
+            const string OPERANRS = "0123456789.,";
             for (int i = 0; i < infix.Length; i++)
             {
                 string work_char = Convert.ToString(infix[i]);// p.1
                 byte prior=0;
                 bool flag = true;
 
-                for (int j = 0; j < 10; j++) // p.2
+                for (int j = 0; j < OPERANRS.Length; j++) // p.2
                     if (work_char == Convert.ToString(OPERANRS[j]))
                     {
                         postfix += work_char;
@@ -212,17 +212,30 @@ namespace curse_2
 
         private double calculator(string rpnString)
         {
-            Stack<int> numbersStack = new Stack<int>();
+            Stack<double> numbersStack = new Stack<double>();
 
-            int op1, op2;
+            double op1, op2;
 
             for (int i = 0; i < rpnString.Length; i++)
             {
+                if (rpnString[i] == ' ')
+                    continue;
+                if (Char.IsDigit(rpnString[i]))
+                {
+                    int j;
+                    for(j=i;j< rpnString.Length; j++)
+                    {
+                        if (!Char.IsDigit(rpnString[j]) && rpnString[j] != ',')
+                            break;
+                    }
+                    string str;
+                    str = rpnString.Substring(i, j - i);
+                    numbersStack.Push(Convert.ToDouble(str));
+                    i = j - 1;
+                }
                 
-                if (Char.IsDigit(rpnString[i]) && rpnString != " ")
-                    numbersStack.Push(int.Parse(rpnString[i].ToString()));
              
-                else
+                if(rpnString[i]=='+'|| rpnString[i] == '-'|| rpnString[i] == '*'|| rpnString[i] == '/')
                 {
                     op2 = numbersStack.Pop();
                     op1 = numbersStack.Pop();
@@ -231,7 +244,7 @@ namespace curse_2
             }          
             return numbersStack.Pop();
         }
-        private static int ApplyOperation(char operation, int op1, int op2)
+        private static double ApplyOperation(char operation, double op1, double op2)
         {
             switch (operation)
             {
