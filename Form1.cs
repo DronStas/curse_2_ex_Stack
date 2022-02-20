@@ -132,27 +132,27 @@ namespace curse_2
         {
             string postfix = "";
             var stack = new Stack<string>();
+            var stackPrior = new Stack<string>();
             string[] operants = { "0123456789" };
             for (int i = 0; i < infix.Length; i++)
             {
+
                 for (int j = 0; j < 10; j++)
                     if (Convert.ToString(infix[i]) == operants[j])
                     {
                         postfix += operants[j];
                         continue;
                     }
+                if (infix[i] == '(')
+                {
 
+                }
             }
             return postfix;
         }
         private double calculator()
         {
             double result;
-
-
-            ///
-
-            ////////////////
             return result;
         }
     }
