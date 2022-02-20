@@ -47,7 +47,7 @@ namespace curse_2
             }
         }
 
-        
+
         private void button_7_Click(object sender, EventArgs e)
         {
             tbBox.Text += "7";
@@ -134,7 +134,7 @@ namespace curse_2
         {
             tbBox.Text += "+";
         }
-    
+
         private string infixToPostfix(string infix)
         {
             string postfix = "";
@@ -154,72 +154,42 @@ namespace curse_2
                 {
 
                 }
-               
+
             }
             return postfix;
         }
 
-        private double calculator(string post)
+        private double calculator(string rpnString)
         {
-            double result;
-            string[] mas = post.Split(' ');
-            string temp_string;
-            for (int i = 0; i < mas.Length; i++)
-                switch (mas[i])
-                {
-                    case "+":
-                        temp_string = (double.Parse(mas[i - 2]) + double.Parse(mas[i - 1])).ToString();
-                        tbBox.AppendText(mas[i - 2] + "+" + mas[i - 1] + "=" + temp_string + "\n");
-                        mas[i - 2] = temp_string;
-                        for (int j = i - 1; j < mas.Length - 2; j++)
-                            mas[j] = mas[j + 2];
-                        Array.Resize(ref mas, mas.Length - 2);
-                        i -= 2;
-                        break;
-                    case "-":
-                        temp_string = (double.Parse(mas[i - 2]) - double.Parse(mas[i - 1])).ToString();
-                        tbBox.AppendText(mas[i - 2] + "-" + mas[i - 1] + "=" + temp_string + "\n");
-                        mas[i - 2] = temp_string;
-                        for (int j = i - 1; j < mas.Length - 2; j++)
-                            mas[j] = mas[j + 2];
-                        Array.Resize(ref mas, mas.Length - 2);
-                        i -= 2;
-                        break;
-                    case "*":
-                        temp_string = (double.Parse(mas[i - 2]) * double.Parse(mas[i - 1])).ToString();
-                        tbBox.AppendText(mas[i - 2] + "*" + mas[i - 1] + "=" + temp_string + "\n");
-                        mas[i - 2] = temp_string;
-                        for (int j = i - 1; j < mas.Length - 2; j++)
-                            mas[j] = mas[j + 2];
-                        Array.Resize(ref mas, mas.Length - 2);
+            Stack<int> numbersStack = new Stack<int>();
 
-                        i -= 2;
-                        break;
-                    case "/":
-                        temp_string = (double.Parse(mas[i - 2]) / double.Parse(mas[i - 1])).ToString();
-                        tbBox.AppendText(mas[i - 2] + "/" + mas[i - 1] + "=" + temp_string + "\n");
-                        mas[i - 2] = temp_string;
-                        for (int j = i - 1; j < mas.Length - 2; j++)
-                            mas[j] = mas[j + 2];
-                        Array.Resize(ref mas, mas.Length - 2);
-                        i -= 2;
-                        break;
-                         
-                }
-            return double.Parse(mas[0]);
+            int op1, op2;
 
-
-
-            var stack = new Stack<string>();
-            string[] operants = { "0123456789" };
-
-            for (int i = 0; i<mas.Length; i++)
+            for (int i = 0; i < rpnString.Length; i++)
             {
-                if ()
-            }
-            return result;
+                
+                if (Char.IsDigit(rpnString[i]) && rpnString != " ")
+                    numbersStack.Push(int.Parse(rpnString[i].ToString()));
+             
+                else
+                {
+                    op2 = numbersStack.Pop();
+                    op1 = numbersStack.Pop();
+                    numbersStack.Push(ApplyOperation(rpnString[i], op1, op2));
+                }
+            }          
+            return numbersStack.Pop();
         }
-
-  
+        private static int ApplyOperation(char operation, int op1, int op2)
+        {
+            switch (operation)
+            {
+                case '+': return (op1 + op2);
+                case '-': return (op1 - op2);
+                case '*': return (op1 * op2);
+                case '/': return (op1 / op2);
+                default: return 0;
+            }
+        }
     }
 }
