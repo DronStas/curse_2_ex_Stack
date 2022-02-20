@@ -202,9 +202,7 @@ namespace curse_2
                     stackPrior.Pop();
                     stack.Pop();
                     stackPrior.Pop();
-                }
-
-                
+                }               
               
             }
             return postfix;
