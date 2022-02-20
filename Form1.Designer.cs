@@ -67,7 +67,7 @@ namespace curse_2
             this.tbBox.Location = new System.Drawing.Point(205, 93);
             this.tbBox.Margin = new System.Windows.Forms.Padding(2);
             this.tbBox.Name = "tbBox";
-            this.tbBox.Size = new System.Drawing.Size(340, 20);
+            this.tbBox.Size = new System.Drawing.Size(452, 22);
             this.tbBox.TabIndex = 3;
             // 
             // panel1
@@ -79,7 +79,7 @@ namespace curse_2
             this.panel1.Location = new System.Drawing.Point(205, 132);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 263);
+            this.panel1.Size = new System.Drawing.Size(463, 324);
             this.panel1.TabIndex = 2;
             // 
             // panel5
@@ -93,7 +93,7 @@ namespace curse_2
             this.panel5.Location = new System.Drawing.Point(255, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(85, 263);
+            this.panel5.Size = new System.Drawing.Size(113, 324);
             this.panel5.TabIndex = 3;
             // 
             // CE_button
@@ -104,7 +104,7 @@ namespace curse_2
             this.CE_button.Location = new System.Drawing.Point(0, 3);
             this.CE_button.Margin = new System.Windows.Forms.Padding(2);
             this.CE_button.Name = "CE_button";
-            this.CE_button.Size = new System.Drawing.Size(85, 52);
+            this.CE_button.Size = new System.Drawing.Size(113, 64);
             this.CE_button.TabIndex = 5;
             this.CE_button.Text = "CE";
             this.CE_button.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@ namespace curse_2
             this.button_del.Location = new System.Drawing.Point(0, 55);
             this.button_del.Margin = new System.Windows.Forms.Padding(2);
             this.button_del.Name = "button_del";
-            this.button_del.Size = new System.Drawing.Size(85, 52);
+            this.button_del.Size = new System.Drawing.Size(113, 64);
             this.button_del.TabIndex = 4;
             this.button_del.Text = "/";
             this.button_del.UseVisualStyleBackColor = true;
@@ -132,7 +132,7 @@ namespace curse_2
             this.button_mult.Location = new System.Drawing.Point(0, 107);
             this.button_mult.Margin = new System.Windows.Forms.Padding(2);
             this.button_mult.Name = "button_mult";
-            this.button_mult.Size = new System.Drawing.Size(85, 52);
+            this.button_mult.Size = new System.Drawing.Size(113, 64);
             this.button_mult.TabIndex = 3;
             this.button_mult.Text = "X";
             this.button_mult.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@ namespace curse_2
             this.button_min.Location = new System.Drawing.Point(0, 159);
             this.button_min.Margin = new System.Windows.Forms.Padding(2);
             this.button_min.Name = "button_min";
-            this.button_min.Size = new System.Drawing.Size(85, 52);
+            this.button_min.Size = new System.Drawing.Size(113, 64);
             this.button_min.TabIndex = 2;
             this.button_min.Text = "-";
             this.button_min.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@ namespace curse_2
             this.button_plus.Location = new System.Drawing.Point(0, 211);
             this.button_plus.Margin = new System.Windows.Forms.Padding(2);
             this.button_plus.Name = "button_plus";
-            this.button_plus.Size = new System.Drawing.Size(85, 52);
+            this.button_plus.Size = new System.Drawing.Size(113, 64);
             this.button_plus.TabIndex = 1;
             this.button_plus.Text = "+";
             this.button_plus.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@ namespace curse_2
             this.panel4.Location = new System.Drawing.Point(170, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(85, 263);
+            this.panel4.Size = new System.Drawing.Size(113, 324);
             this.panel4.TabIndex = 2;
             // 
             // AC_button
@@ -188,7 +188,7 @@ namespace curse_2
             this.AC_button.Location = new System.Drawing.Point(0, 3);
             this.AC_button.Margin = new System.Windows.Forms.Padding(2);
             this.AC_button.Name = "AC_button";
-            this.AC_button.Size = new System.Drawing.Size(85, 52);
+            this.AC_button.Size = new System.Drawing.Size(113, 64);
             this.AC_button.TabIndex = 5;
             this.AC_button.Text = "AC";
             this.AC_button.UseVisualStyleBackColor = true;
@@ -202,7 +202,7 @@ namespace curse_2
             this.button_9.Location = new System.Drawing.Point(0, 55);
             this.button_9.Margin = new System.Windows.Forms.Padding(2);
             this.button_9.Name = "button_9";
-            this.button_9.Size = new System.Drawing.Size(85, 52);
+            this.button_9.Size = new System.Drawing.Size(113, 64);
             this.button_9.TabIndex = 4;
             this.button_9.Text = "9";
             this.button_9.UseVisualStyleBackColor = true;
@@ -216,7 +216,7 @@ namespace curse_2
             this.button_6.Location = new System.Drawing.Point(0, 107);
             this.button_6.Margin = new System.Windows.Forms.Padding(2);
             this.button_6.Name = "button_6";
-            this.button_6.Size = new System.Drawing.Size(85, 52);
+            this.button_6.Size = new System.Drawing.Size(113, 64);
             this.button_6.TabIndex = 3;
             this.button_6.Text = "6";
             this.button_6.UseVisualStyleBackColor = true;
@@ -230,7 +230,7 @@ namespace curse_2
             this.button_3.Location = new System.Drawing.Point(0, 159);
             this.button_3.Margin = new System.Windows.Forms.Padding(2);
             this.button_3.Name = "button_3";
-            this.button_3.Size = new System.Drawing.Size(85, 52);
+            this.button_3.Size = new System.Drawing.Size(113, 64);
             this.button_3.TabIndex = 2;
             this.button_3.Text = "3";
             this.button_3.UseVisualStyleBackColor = true;
@@ -244,7 +244,7 @@ namespace curse_2
             this.button_calculator.Location = new System.Drawing.Point(0, 211);
             this.button_calculator.Margin = new System.Windows.Forms.Padding(2);
             this.button_calculator.Name = "button_calculator";
-            this.button_calculator.Size = new System.Drawing.Size(85, 52);
+            this.button_calculator.Size = new System.Drawing.Size(113, 64);
             this.button_calculator.TabIndex = 1;
             this.button_calculator.Text = "=";
             this.button_calculator.UseVisualStyleBackColor = true;
@@ -261,7 +261,7 @@ namespace curse_2
             this.panel3.Location = new System.Drawing.Point(85, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(85, 263);
+            this.panel3.Size = new System.Drawing.Size(113, 324);
             this.panel3.TabIndex = 1;
             // 
             // right_button
@@ -272,7 +272,7 @@ namespace curse_2
             this.right_button.Location = new System.Drawing.Point(0, 3);
             this.right_button.Margin = new System.Windows.Forms.Padding(2);
             this.right_button.Name = "right_button";
-            this.right_button.Size = new System.Drawing.Size(85, 52);
+            this.right_button.Size = new System.Drawing.Size(113, 64);
             this.right_button.TabIndex = 5;
             this.right_button.Text = ")";
             this.right_button.UseVisualStyleBackColor = true;
@@ -286,7 +286,7 @@ namespace curse_2
             this.button_8.Location = new System.Drawing.Point(0, 55);
             this.button_8.Margin = new System.Windows.Forms.Padding(2);
             this.button_8.Name = "button_8";
-            this.button_8.Size = new System.Drawing.Size(85, 52);
+            this.button_8.Size = new System.Drawing.Size(113, 64);
             this.button_8.TabIndex = 4;
             this.button_8.Text = "8";
             this.button_8.UseVisualStyleBackColor = true;
@@ -300,7 +300,7 @@ namespace curse_2
             this.button_5.Location = new System.Drawing.Point(0, 107);
             this.button_5.Margin = new System.Windows.Forms.Padding(2);
             this.button_5.Name = "button_5";
-            this.button_5.Size = new System.Drawing.Size(85, 52);
+            this.button_5.Size = new System.Drawing.Size(113, 64);
             this.button_5.TabIndex = 3;
             this.button_5.Text = "5";
             this.button_5.UseVisualStyleBackColor = true;
@@ -314,7 +314,7 @@ namespace curse_2
             this.button_2.Location = new System.Drawing.Point(0, 159);
             this.button_2.Margin = new System.Windows.Forms.Padding(2);
             this.button_2.Name = "button_2";
-            this.button_2.Size = new System.Drawing.Size(85, 52);
+            this.button_2.Size = new System.Drawing.Size(113, 64);
             this.button_2.TabIndex = 2;
             this.button_2.Text = "2";
             this.button_2.UseVisualStyleBackColor = true;
@@ -328,7 +328,7 @@ namespace curse_2
             this.button_point.Location = new System.Drawing.Point(0, 211);
             this.button_point.Margin = new System.Windows.Forms.Padding(2);
             this.button_point.Name = "button_point";
-            this.button_point.Size = new System.Drawing.Size(85, 52);
+            this.button_point.Size = new System.Drawing.Size(113, 64);
             this.button_point.TabIndex = 1;
             this.button_point.Text = ",";
             this.button_point.UseVisualStyleBackColor = true;
@@ -345,7 +345,7 @@ namespace curse_2
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(85, 263);
+            this.panel2.Size = new System.Drawing.Size(113, 324);
             this.panel2.TabIndex = 0;
             // 
             // left_button
@@ -356,7 +356,7 @@ namespace curse_2
             this.left_button.Location = new System.Drawing.Point(0, 3);
             this.left_button.Margin = new System.Windows.Forms.Padding(2);
             this.left_button.Name = "left_button";
-            this.left_button.Size = new System.Drawing.Size(85, 52);
+            this.left_button.Size = new System.Drawing.Size(113, 64);
             this.left_button.TabIndex = 4;
             this.left_button.Text = "(";
             this.left_button.UseVisualStyleBackColor = true;
@@ -370,7 +370,7 @@ namespace curse_2
             this.button_7.Location = new System.Drawing.Point(0, 55);
             this.button_7.Margin = new System.Windows.Forms.Padding(2);
             this.button_7.Name = "button_7";
-            this.button_7.Size = new System.Drawing.Size(85, 52);
+            this.button_7.Size = new System.Drawing.Size(113, 64);
             this.button_7.TabIndex = 3;
             this.button_7.Text = "7";
             this.button_7.UseVisualStyleBackColor = true;
@@ -384,7 +384,7 @@ namespace curse_2
             this.button_4.Location = new System.Drawing.Point(0, 107);
             this.button_4.Margin = new System.Windows.Forms.Padding(2);
             this.button_4.Name = "button_4";
-            this.button_4.Size = new System.Drawing.Size(85, 52);
+            this.button_4.Size = new System.Drawing.Size(113, 64);
             this.button_4.TabIndex = 2;
             this.button_4.Text = "4";
             this.button_4.UseVisualStyleBackColor = true;
@@ -398,7 +398,7 @@ namespace curse_2
             this.button_1.Location = new System.Drawing.Point(0, 159);
             this.button_1.Margin = new System.Windows.Forms.Padding(2);
             this.button_1.Name = "button_1";
-            this.button_1.Size = new System.Drawing.Size(85, 52);
+            this.button_1.Size = new System.Drawing.Size(113, 64);
             this.button_1.TabIndex = 1;
             this.button_1.Text = "1";
             this.button_1.UseVisualStyleBackColor = true;
@@ -412,7 +412,7 @@ namespace curse_2
             this.button_0.Location = new System.Drawing.Point(0, 211);
             this.button_0.Margin = new System.Windows.Forms.Padding(2);
             this.button_0.Name = "button_0";
-            this.button_0.Size = new System.Drawing.Size(85, 52);
+            this.button_0.Size = new System.Drawing.Size(113, 64);
             this.button_0.TabIndex = 0;
             this.button_0.Text = "0";
             this.button_0.UseVisualStyleBackColor = true;
@@ -420,9 +420,9 @@ namespace curse_2
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(757, 488);
+            this.ClientSize = new System.Drawing.Size(1009, 601);
             this.Controls.Add(this.tbBox);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);

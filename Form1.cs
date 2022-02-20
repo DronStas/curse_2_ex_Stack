@@ -127,7 +127,7 @@ namespace curse_2
         private void button_calculator_Click(object sender, EventArgs e)
         {
             tbBox.Text += "=";
-
+            infixToPostfix(tbBox.Text);
         }
 
         private void button_plus_Click(object sender, EventArgs e)
@@ -139,20 +139,59 @@ namespace curse_2
         {
             string postfix = "";
             var stack = new Stack<string>();
-            var stackPrior = new Stack<string>();
-            string[] operants = { "0123456789" };
+            var stackPrior = new Stack<byte>();
+            string operants = "0123456789";
             for (int i = 0; i < infix.Length; i++)
             {
-
-                for (int j = 0; j < 10; j++)
-                    if (Convert.ToString(infix[i]) == operants[j])
+                string work_char = Convert.ToString(infix[i]);// p.1
+                byte prior=0;
+                bool flag = true;
+                for (int j = 0; j < 10; j++) // p.2
+                    if (work_char == Convert.ToString(operants[j]))
                     {
-                        postfix += operants[j];
-                        continue;
+                        postfix += work_char;
+                        flag = false;
+                        break;
                     }
-                if (infix[i] == '(')
+                if (!flag)
+                    continue;
+                if (work_char == "(")
+                    prior = 0;
+                if (work_char == ")")
+                    prior = 1;
+                if (work_char == "+"|| work_char == "-")
+                    prior = 2;
+                if (work_char == "/" || work_char == "*")
+                    prior = 3;
+                while (true)
                 {
-
+                    if (prior == 0 || prior > stackPrior.Peek())// p.3
+                    {
+                        stack.Push(work_char);
+                        stackPrior.Push(prior);
+                        break;
+                    }
+                    else
+                    {
+                        postfix += stack.Pop();
+                        stackPrior.Pop();
+                    }
+                }
+                if (prior == 1)
+                {
+                    stack.Pop();
+                    stackPrior.Pop();
+                    stack.Pop();
+                    stackPrior.Pop();
+                }
+                if (work_char == "=")
+                {
+                    while (stack.Count != 0)
+                    {
+                        postfix += stack.Pop();
+                    }
+                    postfix += "=";
+                    break;
                 }
 
             }
