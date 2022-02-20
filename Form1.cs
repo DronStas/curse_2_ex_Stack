@@ -150,6 +150,7 @@ namespace curse_2
             double result;
             hello
                 
+            // даник
             return result;
         }
     }
