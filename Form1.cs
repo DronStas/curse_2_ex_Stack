@@ -148,6 +148,11 @@ namespace curse_2
         private double calculator()
         {
             double result;
+
+
+            ///
+
+            ////////////////
             return result;
         }
     }
