@@ -74,46 +74,53 @@ namespace curse_2
 
         private void button_6_Click(object sender, EventArgs e)
         {
-            textBox1.Text += ")";
+            textBox1.Text += "6";
         }
 
         private void button_mult_Click(object sender, EventArgs e)
         {
-
+            textBox1.Text += "*";
         }
 
         private void button_1_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "1";
 
         }
 
         private void button_2_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "2";
 
         }
 
         private void button_3_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "3";
 
         }
 
         private void button_min_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "-";
 
         }
 
         private void button_0_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "0";
 
         }
 
         private void button_point_Click(object sender, EventArgs e)
         {
+            textBox1.Text += ",";
 
         }
 
         private void button_calculator_Click(object sender, EventArgs e)
         {
+            textBox1.Text += "=";
 
         }
 
@@ -141,6 +148,8 @@ namespace curse_2
         private double calculator()
         {
             double result;
+            hello
+                
             return result;
         }
     }
