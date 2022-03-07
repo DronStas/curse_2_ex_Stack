@@ -288,6 +288,8 @@ namespace curse_2
 
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 44 && e.KeyChar != 8)
                 e.Handled = true;
+            if (e.KeyChar == '+' || e.KeyChar == '-' || e.KeyChar == '/' || e.KeyChar == '*' || e.KeyChar == '(' || e.KeyChar == ')')
+                e.Handled = false;
 
             if (e.KeyChar == ',')
             {

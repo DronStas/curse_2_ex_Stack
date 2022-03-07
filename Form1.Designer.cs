@@ -65,6 +65,7 @@ namespace curse_2
             // 
             // tbBox
             // 
+            this.tbBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tbBox.Location = new System.Drawing.Point(11, 25);
             this.tbBox.Margin = new System.Windows.Forms.Padding(2);
             this.tbBox.Multiline = true;
@@ -102,7 +103,6 @@ namespace curse_2
             // 
             // CE_button
             // 
-            this.CE_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CE_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.CE_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CE_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -117,7 +117,6 @@ namespace curse_2
             // 
             // button_del
             // 
-            this.button_del.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_del.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -132,7 +131,6 @@ namespace curse_2
             // 
             // button_mult
             // 
-            this.button_mult.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_mult.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_mult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_mult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -147,7 +145,6 @@ namespace curse_2
             // 
             // button_min
             // 
-            this.button_min.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_min.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -162,7 +159,6 @@ namespace curse_2
             // 
             // button_plus
             // 
-            this.button_plus.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_plus.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -191,7 +187,6 @@ namespace curse_2
             // 
             // AC_button
             // 
-            this.AC_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.AC_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.AC_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AC_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -206,7 +201,6 @@ namespace curse_2
             // 
             // button_9
             // 
-            this.button_9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -221,7 +215,6 @@ namespace curse_2
             // 
             // button_6
             // 
-            this.button_6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -236,7 +229,6 @@ namespace curse_2
             // 
             // button_3
             // 
-            this.button_3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -251,7 +243,6 @@ namespace curse_2
             // 
             // button_calculator
             // 
-            this.button_calculator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_calculator.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_calculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_calculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -280,7 +271,6 @@ namespace curse_2
             // 
             // right_button
             // 
-            this.right_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.right_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.right_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.right_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -295,7 +285,6 @@ namespace curse_2
             // 
             // button_8
             // 
-            this.button_8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -310,7 +299,6 @@ namespace curse_2
             // 
             // button_5
             // 
-            this.button_5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -325,7 +313,6 @@ namespace curse_2
             // 
             // button_2
             // 
-            this.button_2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -340,7 +327,6 @@ namespace curse_2
             // 
             // button_point
             // 
-            this.button_point.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_point.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_point.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_point.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -352,7 +338,6 @@ namespace curse_2
             this.button_point.Text = ",";
             this.button_point.UseVisualStyleBackColor = true;
             this.button_point.Click += new System.EventHandler(this.button_point_Click);
-
             // 
             // panel2
             // 
@@ -370,7 +355,6 @@ namespace curse_2
             // 
             // left_button
             // 
-            this.left_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.left_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.left_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.left_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -385,7 +369,6 @@ namespace curse_2
             // 
             // button_7
             // 
-            this.button_7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -400,7 +383,6 @@ namespace curse_2
             // 
             // button_4
             // 
-            this.button_4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -415,7 +397,6 @@ namespace curse_2
             // 
             // button_1
             // 
-            this.button_1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -430,7 +411,6 @@ namespace curse_2
             // 
             // button_0
             // 
-            this.button_0.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
