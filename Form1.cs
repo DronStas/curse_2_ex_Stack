@@ -29,7 +29,9 @@ namespace curse_2
 
         private void right_button_Click(object sender, EventArgs e)
         {
-            tbBox.Text += ")";
+           
+                tbBox.Text += ")";
+
         }
 
         private void AC_button_Click(object sender, EventArgs e)
@@ -145,76 +147,80 @@ namespace curse_2
 
         private string infixToPostfix(string infix)
         {
-            var stack = new Stack<string>();
-            var stackPrior = new Stack<byte>();
-            stackPrior.Push(0);
-
-            string postfix = "";
-            const string OPERANRS = "0123456789.,";
-            for (int i = 0; i < infix.Length; i++)
+            try
             {
-                string work_char = Convert.ToString(infix[i]);// p.1
-                byte prior=0;
-                bool flag = true;
+                var stack = new Stack<string>();
+                var stackPrior = new Stack<byte>();
+                stackPrior.Push(0);
 
-                for (int j = 0; j < OPERANRS.Length; j++) // p.2
-                    if (work_char == Convert.ToString(OPERANRS[j]))
+                string postfix = "";
+                const string OPERANRS = "0123456789.,";
+                for (int i = 0; i < infix.Length; i++)
+                {
+                    string work_char = Convert.ToString(infix[i]);// p.1
+                    byte prior = 0;
+                    bool flag = true;
+
+                    for (int j = 0; j < OPERANRS.Length; j++) // p.2
+                        if (work_char == Convert.ToString(OPERANRS[j]))
+                        {
+                            postfix += work_char;
+                            flag = false;
+                            break;
+                        }
+                    if (!flag)
+                        continue;
+                    //prior set
+                    if (work_char == "(")
+                        prior = 0;
+                    if (work_char == ")")
+                        prior = 1;
+                    if (work_char == "+" || work_char == "-")
+                        prior = 2;
+                    if (work_char == "/" || work_char == "*")
+                        prior = 3;
+                    //
+
+                    if (work_char == "=")//p.6
                     {
-                        postfix += work_char;
-                        flag = false;
+                        while (stack.Count != 0)
+                        {
+                            postfix += stack.Pop();
+                        }
+                        postfix += "=";
                         break;
                     }
-                if (!flag)
-                    continue;
-                //prior set
-                if (work_char == "(")
-                    prior = 0;
-                if (work_char == ")")
-                    prior = 1;
-                if (work_char == "+"|| work_char == "-")
-                    prior = 2;
-                if (work_char == "/" || work_char == "*")
-                    prior = 3;
-                //
 
-                if (work_char == "=")//p.6
-                {
-                    while (stack.Count != 0)
+                    while (true)
                     {
-                        postfix += stack.Pop();
+                        if (prior == 0 || prior > stackPrior.Peek())// p.3
+                        {
+                            stack.Push(work_char);
+                            stackPrior.Push(prior);
+
+                            postfix += " ";
+                            break;
+                        }
+                        else //p.5
+                        {
+                            postfix += stack.Pop();
+                            stackPrior.Pop();
+                        }
                     }
-                    postfix += "=";
-                    break;
-                }
 
-                while (true)
-                {
-                    if (prior == 0 || prior > stackPrior.Peek())// p.3
+                    if (prior == 1)//p.4
                     {
-                        stack.Push(work_char);
-                        stackPrior.Push(prior);
-
-                        postfix += " ";
-                        break;
-                    }
-                    else //p.5
-                    {
-                        postfix += stack.Pop();
+                        stack.Pop();
+                        stackPrior.Pop();
+                        stack.Pop();
                         stackPrior.Pop();
                     }
-                }
 
-                if (prior == 1)//p.4
-                {
-                    stack.Pop();
-                    stackPrior.Pop();
-                    stack.Pop();
-                    stackPrior.Pop();
-                }               
-              
+                }
+                Index.Text = postfix.ToString();
+                return postfix;
             }
-            Index.Text = postfix.ToString();
-            return postfix;
+            catch (Exception) { return "0";}
         }
 
         private double calculator(string rpnString)
@@ -251,7 +257,8 @@ namespace curse_2
                 }
                 return numbersStack.Pop();
             }
-            catch (Exception) { MessageBox.Show("Error"); return 0; }
+            catch (Exception) { MessageBox.Show("Error..."); return 0; }
+
         }
         private static double ApplyOperation(char operation, double op1, double op2)
         {
@@ -273,27 +280,6 @@ namespace curse_2
                 tbBox.SelectionStart = 2;
             }
 
-            if (tbBox.Text.Length == 0)
-            {
-                if (e.KeyChar == 44)
-                { tbBox.Text += "0,"; }
-            }
-
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 44 && e.KeyChar != 8)
-                e.Handled = true;
-
-            if (e.KeyChar == ',')
-            {
-                if (tbBox.Text.IndexOf(',') != -1)
-                {
-                    e.Handled = true;
-                }
-                return;
-            }
-        }
-
-        private void button_point_KeyPress(object sender, KeyPressEventArgs e)
-        {
             if (tbBox.Text.Length == 0)
             {
                 if (e.KeyChar == 44)

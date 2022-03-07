@@ -65,7 +65,7 @@ namespace curse_2
             // 
             // tbBox
             // 
-            this.tbBox.Location = new System.Drawing.Point(11, 27);
+            this.tbBox.Location = new System.Drawing.Point(11, 25);
             this.tbBox.Margin = new System.Windows.Forms.Padding(2);
             this.tbBox.Multiline = true;
             this.tbBox.Name = "tbBox";
@@ -83,7 +83,7 @@ namespace curse_2
             this.panel1.Location = new System.Drawing.Point(13, 53);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(340, 263);
+            this.panel1.Size = new System.Drawing.Size(340, 261);
             this.panel1.TabIndex = 2;
             // 
             // panel5
@@ -97,7 +97,7 @@ namespace curse_2
             this.panel5.Location = new System.Drawing.Point(255, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(85, 263);
+            this.panel5.Size = new System.Drawing.Size(85, 261);
             this.panel5.TabIndex = 3;
             // 
             // CE_button
@@ -105,7 +105,8 @@ namespace curse_2
             this.CE_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.CE_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.CE_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CE_button.Location = new System.Drawing.Point(0, 3);
+            this.CE_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CE_button.Location = new System.Drawing.Point(0, 1);
             this.CE_button.Margin = new System.Windows.Forms.Padding(2);
             this.CE_button.Name = "CE_button";
             this.CE_button.Size = new System.Drawing.Size(85, 52);
@@ -119,7 +120,8 @@ namespace curse_2
             this.button_del.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_del.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_del.Location = new System.Drawing.Point(0, 55);
+            this.button_del.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_del.Location = new System.Drawing.Point(0, 53);
             this.button_del.Margin = new System.Windows.Forms.Padding(2);
             this.button_del.Name = "button_del";
             this.button_del.Size = new System.Drawing.Size(85, 52);
@@ -133,7 +135,8 @@ namespace curse_2
             this.button_mult.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_mult.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_mult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_mult.Location = new System.Drawing.Point(0, 107);
+            this.button_mult.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_mult.Location = new System.Drawing.Point(0, 105);
             this.button_mult.Margin = new System.Windows.Forms.Padding(2);
             this.button_mult.Name = "button_mult";
             this.button_mult.Size = new System.Drawing.Size(85, 52);
@@ -147,7 +150,8 @@ namespace curse_2
             this.button_min.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_min.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_min.Location = new System.Drawing.Point(0, 159);
+            this.button_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_min.Location = new System.Drawing.Point(0, 157);
             this.button_min.Margin = new System.Windows.Forms.Padding(2);
             this.button_min.Name = "button_min";
             this.button_min.Size = new System.Drawing.Size(85, 52);
@@ -161,7 +165,8 @@ namespace curse_2
             this.button_plus.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_plus.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_plus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_plus.Location = new System.Drawing.Point(0, 211);
+            this.button_plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_plus.Location = new System.Drawing.Point(0, 209);
             this.button_plus.Margin = new System.Windows.Forms.Padding(2);
             this.button_plus.Name = "button_plus";
             this.button_plus.Size = new System.Drawing.Size(85, 52);
@@ -181,7 +186,7 @@ namespace curse_2
             this.panel4.Location = new System.Drawing.Point(170, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(85, 263);
+            this.panel4.Size = new System.Drawing.Size(85, 261);
             this.panel4.TabIndex = 2;
             // 
             // AC_button
@@ -189,7 +194,8 @@ namespace curse_2
             this.AC_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.AC_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.AC_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AC_button.Location = new System.Drawing.Point(0, 3);
+            this.AC_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AC_button.Location = new System.Drawing.Point(0, 1);
             this.AC_button.Margin = new System.Windows.Forms.Padding(2);
             this.AC_button.Name = "AC_button";
             this.AC_button.Size = new System.Drawing.Size(85, 52);
@@ -203,7 +209,8 @@ namespace curse_2
             this.button_9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_9.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_9.Location = new System.Drawing.Point(0, 55);
+            this.button_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_9.Location = new System.Drawing.Point(0, 53);
             this.button_9.Margin = new System.Windows.Forms.Padding(2);
             this.button_9.Name = "button_9";
             this.button_9.Size = new System.Drawing.Size(85, 52);
@@ -217,7 +224,8 @@ namespace curse_2
             this.button_6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_6.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_6.Location = new System.Drawing.Point(0, 107);
+            this.button_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_6.Location = new System.Drawing.Point(0, 105);
             this.button_6.Margin = new System.Windows.Forms.Padding(2);
             this.button_6.Name = "button_6";
             this.button_6.Size = new System.Drawing.Size(85, 52);
@@ -231,7 +239,8 @@ namespace curse_2
             this.button_3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_3.Location = new System.Drawing.Point(0, 159);
+            this.button_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_3.Location = new System.Drawing.Point(0, 157);
             this.button_3.Margin = new System.Windows.Forms.Padding(2);
             this.button_3.Name = "button_3";
             this.button_3.Size = new System.Drawing.Size(85, 52);
@@ -245,7 +254,8 @@ namespace curse_2
             this.button_calculator.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_calculator.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_calculator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_calculator.Location = new System.Drawing.Point(0, 211);
+            this.button_calculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_calculator.Location = new System.Drawing.Point(0, 209);
             this.button_calculator.Margin = new System.Windows.Forms.Padding(2);
             this.button_calculator.Name = "button_calculator";
             this.button_calculator.Size = new System.Drawing.Size(85, 52);
@@ -265,7 +275,7 @@ namespace curse_2
             this.panel3.Location = new System.Drawing.Point(85, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(85, 263);
+            this.panel3.Size = new System.Drawing.Size(85, 261);
             this.panel3.TabIndex = 1;
             // 
             // right_button
@@ -273,7 +283,8 @@ namespace curse_2
             this.right_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.right_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.right_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.right_button.Location = new System.Drawing.Point(0, 3);
+            this.right_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.right_button.Location = new System.Drawing.Point(0, 1);
             this.right_button.Margin = new System.Windows.Forms.Padding(2);
             this.right_button.Name = "right_button";
             this.right_button.Size = new System.Drawing.Size(85, 52);
@@ -287,7 +298,8 @@ namespace curse_2
             this.button_8.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_8.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_8.Location = new System.Drawing.Point(0, 55);
+            this.button_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_8.Location = new System.Drawing.Point(0, 53);
             this.button_8.Margin = new System.Windows.Forms.Padding(2);
             this.button_8.Name = "button_8";
             this.button_8.Size = new System.Drawing.Size(85, 52);
@@ -301,7 +313,8 @@ namespace curse_2
             this.button_5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_5.Location = new System.Drawing.Point(0, 107);
+            this.button_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_5.Location = new System.Drawing.Point(0, 105);
             this.button_5.Margin = new System.Windows.Forms.Padding(2);
             this.button_5.Name = "button_5";
             this.button_5.Size = new System.Drawing.Size(85, 52);
@@ -315,7 +328,8 @@ namespace curse_2
             this.button_2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_2.Location = new System.Drawing.Point(0, 159);
+            this.button_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_2.Location = new System.Drawing.Point(0, 157);
             this.button_2.Margin = new System.Windows.Forms.Padding(2);
             this.button_2.Name = "button_2";
             this.button_2.Size = new System.Drawing.Size(85, 52);
@@ -329,7 +343,8 @@ namespace curse_2
             this.button_point.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_point.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_point.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_point.Location = new System.Drawing.Point(0, 211);
+            this.button_point.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_point.Location = new System.Drawing.Point(0, 209);
             this.button_point.Margin = new System.Windows.Forms.Padding(2);
             this.button_point.Name = "button_point";
             this.button_point.Size = new System.Drawing.Size(85, 52);
@@ -337,7 +352,7 @@ namespace curse_2
             this.button_point.Text = ",";
             this.button_point.UseVisualStyleBackColor = true;
             this.button_point.Click += new System.EventHandler(this.button_point_Click);
-            this.button_point.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.button_point_KeyPress);
+
             // 
             // panel2
             // 
@@ -350,7 +365,7 @@ namespace curse_2
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(85, 263);
+            this.panel2.Size = new System.Drawing.Size(85, 261);
             this.panel2.TabIndex = 0;
             // 
             // left_button
@@ -358,7 +373,8 @@ namespace curse_2
             this.left_button.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.left_button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.left_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.left_button.Location = new System.Drawing.Point(0, 3);
+            this.left_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.left_button.Location = new System.Drawing.Point(0, 1);
             this.left_button.Margin = new System.Windows.Forms.Padding(2);
             this.left_button.Name = "left_button";
             this.left_button.Size = new System.Drawing.Size(85, 52);
@@ -372,7 +388,8 @@ namespace curse_2
             this.button_7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_7.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_7.Location = new System.Drawing.Point(0, 55);
+            this.button_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_7.Location = new System.Drawing.Point(0, 53);
             this.button_7.Margin = new System.Windows.Forms.Padding(2);
             this.button_7.Name = "button_7";
             this.button_7.Size = new System.Drawing.Size(85, 52);
@@ -386,7 +403,8 @@ namespace curse_2
             this.button_4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_4.Location = new System.Drawing.Point(0, 107);
+            this.button_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_4.Location = new System.Drawing.Point(0, 105);
             this.button_4.Margin = new System.Windows.Forms.Padding(2);
             this.button_4.Name = "button_4";
             this.button_4.Size = new System.Drawing.Size(85, 52);
@@ -400,7 +418,8 @@ namespace curse_2
             this.button_1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_1.Location = new System.Drawing.Point(0, 159);
+            this.button_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_1.Location = new System.Drawing.Point(0, 157);
             this.button_1.Margin = new System.Windows.Forms.Padding(2);
             this.button_1.Name = "button_1";
             this.button_1.Size = new System.Drawing.Size(85, 52);
@@ -414,7 +433,8 @@ namespace curse_2
             this.button_0.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button_0.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button_0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_0.Location = new System.Drawing.Point(0, 211);
+            this.button_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_0.Location = new System.Drawing.Point(0, 209);
             this.button_0.Margin = new System.Windows.Forms.Padding(2);
             this.button_0.Name = "button_0";
             this.button_0.Size = new System.Drawing.Size(85, 52);
@@ -437,7 +457,7 @@ namespace curse_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(369, 385);
+            this.ClientSize = new System.Drawing.Size(368, 382);
             this.Controls.Add(this.Index);
             this.Controls.Add(this.tbBox);
             this.Controls.Add(this.panel1);
