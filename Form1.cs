@@ -120,8 +120,16 @@ namespace curse_2
 
         private void button_point_Click(object sender, EventArgs e)
         {
+            
             tbBox.Text += ",";
-
+            if (tbBox.Text == ",")
+            {
+                tbBox.Text = "0,";
+                tbBox.SelectionStart = 2;
+            }
+            
+            
+      
         }
 
         private void button_calculator_Click(object sender, EventArgs e)
@@ -205,42 +213,45 @@ namespace curse_2
                 }               
               
             }
+            Index.Text = postfix.ToString();
             return postfix;
         }
 
         private double calculator(string rpnString)
         {
-            Stack<double> numbersStack = new Stack<double>();
-
-            double op1, op2;
-
-            for (int i = 0; i < rpnString.Length; i++)
+            try
             {
-                if (rpnString[i] == ' ')
-                    continue;
-                if (Char.IsDigit(rpnString[i]))
+                Stack<double> numbersStack = new Stack<double>();
+                double op1, op2;
+                for (int i = 0; i < rpnString.Length; i++)
                 {
-                    int j;
-                    for(j=i;j< rpnString.Length; j++)
+                    if (rpnString[i] == ' ')
+                        continue;
+                    if (Char.IsDigit(rpnString[i]))
                     {
-                        if (!Char.IsDigit(rpnString[j]) && rpnString[j] != ',')
-                            break;
+                        int j;
+                        for (j = i; j < rpnString.Length; j++)
+                        {
+                            if (!Char.IsDigit(rpnString[j]) && rpnString[j] != ',')
+                                break;
+                        }
+                        string str;
+                        str = rpnString.Substring(i, j - i);
+                        numbersStack.Push(Convert.ToDouble(str));
+                        i = j - 1;
                     }
-                    string str;
-                    str = rpnString.Substring(i, j - i);
-                    numbersStack.Push(Convert.ToDouble(str));
-                    i = j - 1;
+
+
+                    if (rpnString[i] == '+' || rpnString[i] == '-' || rpnString[i] == '*' || rpnString[i] == '/')
+                    {
+                        op2 = numbersStack.Pop();
+                        op1 = numbersStack.Pop();
+                        numbersStack.Push(ApplyOperation(rpnString[i], op1, op2));
+                    }
                 }
-                
-             
-                if(rpnString[i]=='+'|| rpnString[i] == '-'|| rpnString[i] == '*'|| rpnString[i] == '/')
-                {
-                    op2 = numbersStack.Pop();
-                    op1 = numbersStack.Pop();
-                    numbersStack.Push(ApplyOperation(rpnString[i], op1, op2));
-                }
-            }          
-            return numbersStack.Pop();
+                return numbersStack.Pop();
+            }
+            catch (Exception) { MessageBox.Show("Error"); return 0; }
         }
         private static double ApplyOperation(char operation, double op1, double op2)
         {
@@ -251,6 +262,54 @@ namespace curse_2
                 case '*': return (op1 * op2);
                 case '/': return (op1 / op2);
                 default: return 0;
+            }
+        }
+
+        private void tbBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (tbBox.Text == ",")
+            {
+                tbBox.Text = "0,";
+                tbBox.SelectionStart = 2;
+            }
+
+            if (tbBox.Text.Length == 0)
+            {
+                if (e.KeyChar == 44)
+                { tbBox.Text += "0,"; }
+            }
+
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 44 && e.KeyChar != 8)
+                e.Handled = true;
+
+            if (e.KeyChar == ',')
+            {
+                if (tbBox.Text.IndexOf(',') != -1)
+                {
+                    e.Handled = true;
+                }
+                return;
+            }
+        }
+
+        private void button_point_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (tbBox.Text.Length == 0)
+            {
+                if (e.KeyChar == 44)
+                { tbBox.Text += "0,"; }
+            }
+
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && e.KeyChar != 44 && e.KeyChar != 8)
+                e.Handled = true;
+
+            if (e.KeyChar == ',')
+            {
+                if (tbBox.Text.IndexOf(',') != -1)
+                {
+                    e.Handled = true;
+                }
+                return;
             }
         }
     }
